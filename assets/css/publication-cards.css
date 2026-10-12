@@ -40,6 +40,20 @@
   margin-top: 0.75rem;
 }
 
+.publications ol.bibliography > li .links .btn {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.publications ol.bibliography > li .periodical .publication-venue-inline {
+  display: inline-block;
+  width: auto !important;
+  margin-left: 0.4rem;
+  font-size: 0.75rem;
+  font-style: normal;
+  vertical-align: 0.1em;
+}
+
 @media (min-width: 992px) {
   .publications {
     width: calc(100vw - 3rem);
@@ -69,6 +83,7 @@
     min-width: 0;
     max-width: none;
     padding: 0;
+    align-self: center;
   }
 }
 
