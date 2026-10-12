@@ -9,6 +9,17 @@ document.addEventListener("DOMContentLoaded", () => {
     video.play().catch(() => {
       // The controls remain available if a browser blocks autoplay.
     });
+
+    const publication = video.closest("li");
+    const venueBadge = publication?.querySelector(".abbr > abbr");
+    const venueName = publication?.querySelector("[id] .periodical em");
+
+    if (venueBadge && venueName) {
+      const abbreviation = document.createElement("strong");
+      abbreviation.className = "publication-venue-name";
+      abbreviation.textContent = ` (${venueBadge.textContent.trim()})`;
+      venueName.appendChild(abbreviation);
+    }
   });
 
   document.querySelectorAll('.publications a[href="https://cvlab-uos.github.io/ViewSplat/"]').forEach((link) => {
