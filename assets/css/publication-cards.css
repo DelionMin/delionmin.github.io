@@ -45,21 +45,6 @@
   font-size: 0.875rem;
 }
 
-.publications ol.bibliography > li .periodical .publication-venue-inline {
-  display: inline-block;
-  margin-left: 0.4rem;
-  padding: 0.25em 0.5em;
-  border-radius: 0.25rem;
-  background-color: var(--global-theme-color);
-  color: var(--global-card-bg-color);
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1;
-  white-space: nowrap;
-  vertical-align: 0.1em;
-}
-
 @media (min-width: 992px) {
   .publications {
     width: calc(100vw - 3rem);

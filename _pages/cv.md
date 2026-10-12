@@ -10,3 +10,5 @@ description: Education, research experience, publications, awards, and projects.
 toc:
   sidebar: left
 ---
+
+<link rel="stylesheet" href="{{ '/assets/css/site-overrides.css' | relative_url }}">
