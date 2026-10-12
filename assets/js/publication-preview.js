@@ -16,14 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (venueBadge && periodical) {
       const yearText = Array.from(periodical.childNodes).find((node) => node.nodeType === Node.TEXT_NODE && /,\s*\d{4}/.test(node.textContent));
+      const inlineVenue = document.createElement("span");
 
-      venueBadge.classList.add("publication-venue-inline");
+      inlineVenue.className = "publication-venue-inline";
+      inlineVenue.textContent = venueBadge.textContent.trim();
+      venueBadge.style.display = "none";
       if (yearText) {
         periodical.insertBefore(document.createTextNode(" "), yearText);
-        periodical.insertBefore(venueBadge, yearText);
+        periodical.insertBefore(inlineVenue, yearText);
       } else {
         periodical.appendChild(document.createTextNode(" "));
-        periodical.appendChild(venueBadge);
+        periodical.appendChild(inlineVenue);
       }
     }
   });
