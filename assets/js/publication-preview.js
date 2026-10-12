@@ -9,6 +9,25 @@ document.addEventListener("DOMContentLoaded", () => {
     video.play().catch(() => {
       // The controls remain available if a browser blocks autoplay.
     });
+
+    const publication = video.closest("li");
+    const venueBadge = publication?.querySelector(".abbr > abbr");
+    const periodical = publication?.querySelector("[id] .periodical");
+
+    if (venueBadge && periodical) {
+      const yearText = Array.from(periodical.childNodes).find(
+        (node) => node.nodeType === Node.TEXT_NODE && /,\s*\d{4}/.test(node.textContent),
+      );
+
+      venueBadge.classList.add("publication-venue-inline");
+      if (yearText) {
+        periodical.insertBefore(document.createTextNode(" "), yearText);
+        periodical.insertBefore(venueBadge, yearText);
+      } else {
+        periodical.appendChild(document.createTextNode(" "));
+        periodical.appendChild(venueBadge);
+      }
+    }
   });
 
   document.querySelectorAll('.publications a[href="https://cvlab-uos.github.io/ViewSplat/"]').forEach((link) => {
