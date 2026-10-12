@@ -37,7 +37,7 @@
 }
 
 .publications ol.bibliography > li .periodical .publication-venue-name {
-  font-style: normal;
+  font-style: italic;
   font-weight: 700;
 }
 
