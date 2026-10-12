@@ -36,6 +36,11 @@
   line-height: 1.5;
 }
 
+.publications ol.bibliography > li .periodical .publication-venue-name {
+  font-style: normal;
+  font-weight: 700;
+}
+
 .publications ol.bibliography > li .links {
   margin-top: 0.75rem;
 }
