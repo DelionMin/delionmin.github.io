@@ -4,7 +4,10 @@ title: about
 permalink: /
 subtitle: M.S. student in Electrical and Computer Engineering at the University of Seoul
 
-profile: false
+profile:
+  align: right
+  image: profile_SeunggiMin.jpg
+  image_circular: false
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
