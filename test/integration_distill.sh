@@ -4,11 +4,42 @@ set -euo pipefail
 tmp_dir="$(mktemp -d)"
 tmp_override="${tmp_dir}/distill-override.yml"
 tmp_site="${tmp_dir}/site"
+fixture_post="_posts/2021-05-22-integration-distill-fixture.md"
+fixture_created=false
 
 cleanup() {
+  if [ "${fixture_created}" = true ]; then
+    rm -f "${fixture_post}"
+  fi
   rm -rf "${tmp_dir}"
 }
 trap cleanup EXIT
+
+if [ -e "${fixture_post}" ]; then
+  echo "refusing to overwrite existing Distill fixture at ${fixture_post}" >&2
+  exit 1
+fi
+
+cat >"${fixture_post}" <<'MARKDOWN'
+---
+layout: distill
+title: Distill integration fixture
+description: Temporary content used only by the Distill integration test.
+date: 2021-05-22
+permalink: /blog/2021/distill/
+giscus_comments: true
+mermaid:
+  enabled: true
+tikzjax: true
+authors:
+  - name: Integration Test
+    affiliations:
+      name: Test Fixture
+---
+
+This temporary post verifies the Distill layout and its runtime assets.
+MARKDOWN
+fixture_created=true
 
 cat >"${tmp_override}" <<'YAML'
 giscus:
