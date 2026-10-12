@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll('.publications video.preview[src$="viewsplat-preview.mp4"]').forEach(e=>{e.autoplay=!0,e.defaultMuted=!0,e.muted=!0,e.loop=!0,e.playsInline=!0,e.play().catch(()=>{})})});
