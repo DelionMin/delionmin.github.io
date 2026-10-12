@@ -8,6 +8,7 @@ nav_order: 2
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
+<script defer src="{{ '/assets/js/publication-preview.js' | relative_url }}"></script>
 
 <!-- _pages/publications.md -->
 

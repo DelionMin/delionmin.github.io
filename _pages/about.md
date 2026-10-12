@@ -24,6 +24,7 @@ latest_posts:
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
+<script defer src="{{ '/assets/js/publication-preview.js' | relative_url }}"></script>
 
 I am an M.S. student in Electrical and Computer Engineering at the [University of Seoul](https://www.uos.ac.kr/), where I am a member of the [Computer Vision Lab (CVLab)](https://cvlab.uos.ac.kr/) advised by Prof. Hongje Seong. My research focuses on 3D reconstruction, particularly feed-forward 3D Gaussian Splatting and generative 3D scene reconstruction.
 
