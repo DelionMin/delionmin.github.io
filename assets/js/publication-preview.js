@@ -15,9 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const periodical = publication?.querySelector("[id] .periodical");
 
     if (venueBadge && periodical) {
-      const yearText = Array.from(periodical.childNodes).find(
-        (node) => node.nodeType === Node.TEXT_NODE && /,\s*\d{4}/.test(node.textContent),
-      );
+      const yearText = Array.from(periodical.childNodes).find((node) => node.nodeType === Node.TEXT_NODE && /,\s*\d{4}/.test(node.textContent));
 
       venueBadge.classList.add("publication-venue-inline");
       if (yearText) {
