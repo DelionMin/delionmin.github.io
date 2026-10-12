@@ -2,7 +2,6 @@ cv:
   name: Seunggi Min
   label: M.S. Student in Electrical and Computer Engineering
   email: minsk0725@uos.ac.kr
-  location: Seoul, Republic of Korea
   image: ""
   summary: Computer vision researcher working on 3D reconstruction, feed-forward 3D Gaussian Splatting, and generative 3D scene reconstruction for Real2Sim applications.
 
@@ -40,7 +39,6 @@ cv:
     Experience:
       - company: Computer Vision Lab (CVLab), University of Seoul
         position: Undergraduate Researcher
-        location: Seoul, Republic of Korea
         start_date: 2025-04
         end_date: 2026-08
         highlights:

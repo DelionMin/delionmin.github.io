@@ -25,8 +25,8 @@ latest_posts:
 
 <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
 
-I am an M.S. student in Electrical and Computer Engineering at the [University of Seoul](https://www.uos.ac.kr/), where I am a member of the Computer Vision Lab (CVLab) advised by Prof. Hongje Seong. My research focuses on 3D reconstruction, particularly feed-forward 3D Gaussian Splatting and generative 3D scene reconstruction.
+I am an M.S. student in Electrical and Computer Engineering at the [University of Seoul](https://www.uos.ac.kr/), where I am a member of the [Computer Vision Lab (CVLab)](https://cvlab.uos.ac.kr/) advised by Prof. Hongje Seong. My research focuses on 3D reconstruction, particularly feed-forward 3D Gaussian Splatting and generative 3D scene reconstruction.
 
 I am interested in building structured, simulation-ready environments from real-world observations for Real2Sim applications. Previously, I was an undergraduate researcher at CVLab from April 2025 to August 2026. I also studied Computer Science as an exchange student at Hochschule München in 2024.
 
-My work **ViewSplat: View-Adaptive 3D Gaussian Splatting for Feed-Forward Synthesis** was accepted to ECCV 2026. Beyond research, I have led projects in autonomous driving and VLM-based assistive technology, and worked on macroeconomic-conditioned multi-stock forecasting.
+My work **ViewSplat: View-Adaptive 3D Gaussian Splatting for Feed-Forward Synthesis** was accepted to ECCV 2026. Beyond research, I have led projects in autonomous driving and VLM-based assistive technology.
