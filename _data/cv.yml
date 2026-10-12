@@ -15,7 +15,6 @@ cv:
   sections:
     Education:
       - institution: University of Seoul
-        location: Seoul, Republic of Korea
         area: Electrical and Computer Engineering
         studyType: M.S.
         start_date: 2026-09
@@ -24,14 +23,12 @@ cv:
           - Computer Vision Lab (CVLab), advised by Prof. Hongje Seong
 
       - institution: Hochschule München (HM)
-        location: Munich, Germany
         area: Computer Science (Informatik)
         studyType: Exchange Student
         start_date: 2024-03
         end_date: 2024-07
 
       - institution: University of Seoul
-        location: Seoul, Republic of Korea
         area: Electrical and Computer Engineering
         studyType: B.S.
         start_date: 2020-03
