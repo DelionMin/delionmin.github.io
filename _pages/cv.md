@@ -1,5 +1,5 @@
 ---
-layout: cv
+layout: default
 permalink: /cv/
 title: CV
 nav: true
@@ -11,4 +11,6 @@ toc:
   sidebar: left
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/site-overrides.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/site-overrides.css' | relative_url | bust_file_cache }}">
+
+{% al_folio_cv_render %}
