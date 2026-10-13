@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: cv
 permalink: /cv/
 title: CV
 nav: true
@@ -10,7 +10,3 @@ description: Education, research experience, publications, awards, and projects.
 toc:
   sidebar: left
 ---
-
-<link rel="stylesheet" href="{{ '/assets/css/site-overrides.css' | relative_url | bust_file_cache }}">
-
-{% al_folio_cv_render %}
